@@ -3514,3 +3514,17 @@ input, select, textarea {
 			}
 
 	}
+
+	.image-crop {
+  width: 100%;      /* Change the width as needed */
+  height: auto;     /* Change the height as needed */
+  overflow: hidden;  /* Crops anything outside the container */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+.image-crop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* Ensures image fills container while cropping */
+  object-position: center;  /* Adjust this to change the visible portion */
+}
